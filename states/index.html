@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>States</title>
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    <body>
+        <button class="bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500
+        active:bg-violet-700">Save Changes</button>
+
+        <input type="email" class="invalid:border-pink-500 invalid:text-pink-600 border border-black focus:outline
+        focus:invalid:border-pink-500 focus:border-sky-500" placeholder="test"/>
+
+        <div class="flex">
+            <label class="flex peer">
+                <input type="checkbox" />
+                create a to do list
+            </label>
+            <p class="peer-has-checked:hidden">Check!</p>
+        </div>
+
+        <div class="group/gp hover:bg-black">
+            GP
+            <div class="group/p">
+                <p class="group-hover/p:text-white">test1</p>
+                <p>test2</p>
+                <p>test3</p>
+            </div>
+        </div>
+
+        <label>
+            <span class="text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*']">Email</span>
+            <input type="email" name="email" placeholder="mouadmoncif@email.com">
+        </label>
+        
+        <blockquote class="text-center text-2xl font-semibold text-gray-900 italic">
+            When you look
+            <span class="relative inline-block before:absolute before:-inset-1 before:block before:bg-pink-500 before:-skew-y-3">
+                <span class="relative">annoyed</span>
+            </span>
+            all the time, people think that you're busy.
+        </blockquote>
+
+        <input type="file" class="file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 file:text-sm
+        file:font-semibold file:text-violet-700 hover:file:bg-violet-100">
+
+        <h2 class="font-bold text-2xl mt-4">Refining Recipe</h2>
+        <ul role="list" class="list-disc marker:text-sky-400 pl-5">
+            <li>2 liquor worms</li>
+            <li>sweet wine</li>
+            <li>sour wine</li>
+            <li>bitter wine</li>
+            <li>spicy wine</li>
+        </ul>
+
+        <div class="selection:bg-fuchsia-300 selection:text-fuchsia-900 mt-4">
+            <p>
+                I had once cried gradually i lost my tears, i had once screamed gradually i lost my voice, i had once grieved
+                gradually i became able to withstand everything, now only an expressionless face remains, my gaze is as tough as
+                a monolith, only perseverance remains in my heart.
+            </p>
+        </div>
+
+        <div class="text-gray-700">
+            <p class="first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold 
+            first-letter:text-gray-900 first-line:tracking-widest first-line:uppercase">
+                Black boy niggerus <br> White boy goku
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+        </div>
+
+        <div>
+            <button popovertarget="money">Click to win a gazillion dollars</button>
+            <div popover id="money" class="inset-0 m-auto w-fit h-fit px-2 py-2 bg-amber-200
+                opacity-0 transition-all transition-discrete duration-300
+                open:opacity-100 starting:open:opacity-0">
+                Congrats you won a gazillion dollars
+            </div>
+        </div>
+
+    </body>
+</html>
