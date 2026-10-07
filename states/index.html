@@ -88,5 +88,19 @@
             </div>
         </div>
 
+        <div data-size="large" class="data-[size=large]:bg-amber-500">
+            <p>The strong minded will not be lured by worldly affairs</p>
+            <p data-ui="checked" id="paragraph" class="data-checked:bg-black text-white">Today I step on grass tomorrow 
+            i shall step on mountains and rivers</p>
+            <button onclick="switchStyle()">Click me</button>
+        </div>
+
+        <script>
+            function switchStyle() {
+                const p = document.querySelector("#paragraph");
+                p.dataset.ui = p.dataset.ui === "checked" ? "" : "checked" 
+            }
+        </script>   
+
     </body>
 </html>
