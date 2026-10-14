@@ -530,6 +530,9 @@
     }
   }
   @media (prefers-color-scheme: dark) {
+    .dark\:bg-black {
+      background-color: var(--color-black);
+    }
     .dark\:bg-slate-800 {
       background-color: var(--color-slate-800);
     }

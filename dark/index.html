@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div>
+            <button onclick="setLight()">Light</button>
+            <button onclick="setDark()">Dark</button>
+            <button onclick="osPref()">OS</button>
+        </div>
+
+        <div class="bg-white dark:bg-black">
+            <p class="dark:text-white">Because hardships strenghten resolve i will not be lured by worldly affairs today i step on grass tomorrow i step on mountains and rivers</p>
+        </div>
+
+        <script>
+            function toggle() {
+                document.documentElement.classList.toggle(
+                    "dark",
+                    localStorage.theme === "dark" || 
+                    (!localStorage.theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+                )
+            }
+            function setLight() {
+                localStorage.theme = "light"
+                toggle()
+            }
+            function setDark() {
+                localStorage.theme = "dark"
+                toggle()
+            }
+            function osPref() {
+                localStorage.removeItem("theme")
+                toggle()
+            }
+        </script>   
+
+    </body>
+</html>

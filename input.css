@@ -1,3 +1,5 @@
 @import "tailwindcss";
 
 @custom-variant data-checked (&[data-ui~="checked"]);
+
+@custom-variant dark (&:where(.dark, .dark *))
